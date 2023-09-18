@@ -4,101 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- <link
       href="https://fonts.cdnfonts.com/css/sf-pro-display"
       rel="stylesheet"
-    />
+    /> -->
     <link rel="stylesheet" href="./assets/styles/style.css" />
-    <link rel="stylesheet" href="./Lib/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./Lib/swiper8/swiper-bundle.min.css" />
     <script defer src="./main.js"></script>
     <title>Контакты</title>
   </head>
   <body>
     <div class="wrapper">
-      <!-- <div class="pos-f-t">
-        <div class="collapse" id="navbarToggleExternalContent">
-          <div class="bg-white p-4">
-            <ul class="drop_info">
-              <li class="info_1">Каталог</li>
-              <li class="info_2">Покупателям</li>
-              <li class="info_3">О компании</li>
-              <li class="info_4">Поставщикам</li>
-              <li>Контакты</li>
-            </ul>
-            <div class="navbar_icons">
-              <div class="icon_container">
-                <img
-                  class="star_img"
-                  src="./assets/solar_star-line-duotone.svg"
-                  alt=""
-                />
-                <div>
-                  <p>Избранное</p>
-                </div>
-              </div>
-
-              <div class="icon_container_middle">
-                <img class="cart_img" src="./assets/cart-02.svg" alt="" />
-                <div>
-                  <p>Корзина</p>
-                </div>
-              </div>
-
-              <div class="icon_container">
-                <img
-                  class="profile_img"
-                  src="./assets/line-md_account.svg"
-                  alt=""
-                />
-                <div>
-                  <p>Аккаунт</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <nav class="navbar navbar-dark bg-dark">
-          <img src="./assets/Mask group.svg" alt="" />
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarToggleExternalContent"
-            aria-controls="navbarToggleExternalContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </nav>
-      </div> -->
       <div class="header">
         <div class="header_container">
           <button class="download_btn"><a href="#">Скачать прайс</a></button>
 
           <div class="nav">
-            <!-- <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdownMenuLink"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Меню
-              </a>
-              <div
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li> -->
-
             <ul class="info">
               <li class="info_1">Каталог</li>
               <li class="info_2">Покупателям</li>
@@ -118,12 +40,25 @@
         <div class="header_search_container">
           <img src="./assets/Mask group.svg" alt="" />
           <button class="catalog_btn butn">
-            <img src="./assets/list-dot.svg" alt="" /><a>Каталог</a>
+            <img src="./assets/list-dot.svg" alt="" /><a class="link"
+              >Каталог</a
+            >
           </button>
           <input
             class="search_input"
             placeholder="Поиск по сайту"
             type="text"
+          />
+
+          <img
+            class="input_icon_mobile"
+            src="./assets/charm_search-black.svg"
+            alt=""
+          />
+          <img
+            class="catalog_dropdown-btn"
+            src="./assets/list-dot-black.svg"
+            alt=""
           />
           <div class="nav_icons">
             <div class="icon_container">
@@ -228,51 +163,81 @@
             /></a>
           </div>
 
-          <div class="category_cards">
-            <div class="category_card">
-              <div class="img_category_container">
-                <img
-                  src="./assets/img/wallpaperflare.com_wallpaper (14).jpg"
-                  alt=""
-                />
-              </div>
-
-              <h6>CUMMINS</h6>
+          <!-- <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+              <div class="swiper-slide">Slide 6</div>
+              <div class="swiper-slide">Slide 7</div>
+              <div class="swiper-slide">Slide 8</div>
+              <div class="swiper-slide">Slide 9</div>
             </div>
-            <div class="category_card">
-              <div class="img_category_container">
-                <img src="./assets/img/products/categories/cars.png" alt="" />
+            <div class="swiper-pagination"></div>
+          </div> -->
+
+          <div class="swiper_category">
+            <div class="swiper-wrapper">
+              <!-- <div class="category_cards"> -->
+              <div class="category_card swiper-slide">
+                <div class="img_category_container">
+                  <img
+                    src="./assets/img/wallpaperflare.com_wallpaper (14).jpg"
+                    alt=""
+                  />
+                </div>
+
+                <h6>CUMMINS</h6>
+              </div>
+              <div class="category_card swiper-slide">
+                <div class="img_category_container">
+                  <img src="./assets/img/products/categories/cars.png" alt="" />
+                </div>
+
+                <h6>Для легковых авто</h6>
+              </div>
+              <div class="category_card swiper-slide">
+                <div class="img_category_container">
+                  <img src="./assets/img/products/categories/zil.png" alt="" />
+                </div>
+
+                <h6>ЗИЛ</h6>
+              </div>
+              <div class="category_card swiper-slide">
+                <div class="img_category_container">
+                  <img
+                    src="./assets/img/products/categories/kamaz.png"
+                    alt=""
+                  />
+                </div>
+
+                <h6>КАМАЗ</h6>
+              </div>
+              <div class="category_card swiper-slide">
+                <div class="img_category_container">
+                  <img src="./assets/img/products/categories/maz.png" alt="" />
+                </div>
+
+                <h6>МАЗ, КРАЗ</h6>
+              </div>
+              <div class="category_card swiper-slide">
+                <div class="img_category_container">
+                  <img src="./assets/img/products/categories/liaz.png" alt="" />
+                </div>
+
+                <h6>НЕФАЗ, ЛИАЗ</h6>
               </div>
 
-              <h6>Для легковых авто</h6>
-            </div>
-            <div class="category_card">
-              <div class="img_category_container">
-                <img src="./assets/img/products/categories/zil.png" alt="" />
-              </div>
+              <div class="category_card swiper-slide">
+                <div class="img_category_container">
+                  <img src="./assets/img/products/categories/liaz.png" alt="" />
+                </div>
 
-              <h6>ЗИЛ</h6>
-            </div>
-            <div class="category_card">
-              <div class="img_category_container">
-                <img src="./assets/img/products/categories/kamaz.png" alt="" />
+                <h6>НЕФАЗ, ЛИАЗ</h6>
               </div>
-
-              <h6>КАМАЗ</h6>
-            </div>
-            <div class="category_card">
-              <div class="img_category_container">
-                <img src="./assets/img/products/categories/maz.png" alt="" />
-              </div>
-
-              <h6>МАЗ, КРАЗ</h6>
-            </div>
-            <div class="category_card">
-              <div class="img_category_container">
-                <img src="./assets/img/products/categories/liaz.png" alt="" />
-              </div>
-
-              <h6>НЕФАЗ, ЛИАЗ</h6>
+              <!-- </div> -->
             </div>
           </div>
         </div>
@@ -286,6 +251,93 @@
               <span>Новые поступления</span>
             </div>
             <div class="sales" id="switcher_op2"><span>Акции</span></div>
+          </div>
+          <div class="sales_cards">
+            <div class="sales_card">
+              <img
+                class="star"
+                src="./assets/img/products/new/star.svg"
+                alt=""
+              />
+              <div class="img_sales_container">
+                <img src="./assets/img/download.jpeg" alt="" />
+              </div>
+              <p>Запчасти и ремонт Deutz 1015 серия</p>
+              <h6 class="price title">400 000 ₽</h6>
+              <p class="old_price">700 000 ₽</p>
+              <button class="cart-btn">В корзину</button>
+            </div>
+
+            <div class="sales_card">
+              <img
+                class="star"
+                src="./assets/img/products/new/star.svg"
+                alt=""
+              />
+              <div class="img_sales_container">
+                <img src="./assets/img/products/new/2.png" alt="" />
+              </div>
+              <p>Запчасти и ремонт Deutz 1015 серия</p>
+              <h6 class="price title">400 000 ₽</h6>
+              <p class="old_price">700 000 ₽</p>
+              <button class="cart-btn">В корзину</button>
+            </div>
+            <div class="sales_card">
+              <img
+                class="star"
+                src="./assets/img/products/new/star.svg"
+                alt=""
+              />
+              <div class="img_sales_container">
+                <img src="./assets/img/products/new/3.png" alt="" />
+              </div>
+              <p>Запчасти и ремонт Deutz 1015 серия</p>
+              <h6 class="price title">400 000 ₽</h6>
+              <p class="old_price">700 000 ₽</p>
+              <button class="cart-btn">В корзину</button>
+            </div>
+            <div class="sales_card">
+              <img
+                class="star"
+                src="./assets/img/products/new/star.svg"
+                alt=""
+              />
+              <div class="img_sales_container">
+                <img src="./assets/img/products/new/4.png" alt="" />
+              </div>
+              <p>Запчасти и ремонт Deutz 1015 серия</p>
+              <h6 class="price title">400 000 ₽</h6>
+              <p class="old_price">700 000 ₽</p>
+              <button class="cart-btn">В корзину</button>
+            </div>
+            <div class="sales_card">
+              <img
+                class="star"
+                src="./assets/img/products/new/star.svg"
+                alt=""
+              />
+              <div class="img_sales_container">
+                <img src="./assets/img/products/new/5.png" alt="" />
+              </div>
+              <p>Запчасти и ремонт Deutz 1015 серия</p>
+              <h6 class="price title">400 000 ₽</h6>
+              <p class="old_price">700 000 ₽</p>
+              <button class="cart-btn">В корзину</button>
+            </div>
+            <div class="sales_card">
+              <img
+                class="star"
+                src="./assets/img/products/new/star.svg"
+                alt=""
+              />
+              <div class="img_sales_container">
+                <img src="./assets/img/products/new/6.png" alt="" />
+              </div>
+              <p>Запчасти и ремонт Deutz 1015 серия</p>
+              <h6 class="price title">400 000 ₽</h6>
+              <p class="old_price">700 000 ₽</p>
+              <button class="cart-btn">В корзину</button>
+            </div>
           </div>
           <div class="sales_cards">
             <div class="sales_card">
@@ -602,13 +654,12 @@
             <ul>
               <li>Запчасти МАЗ, КРАЗ</li>
               <li>Запчасти НЕФАЗ, ЛИАЗ</li>
+              <li>Запчасти MADARA</li>
+              <li>Запчасти для легковых автомобилей</li>
+              <li>Запчасти ЗИЛ</li>
               <li>Запчасти Трактор</li>
               <li>Запчасти УРАЛ</li>
               <li>Ремни</li>
-            </ul>
-          </div>
-          <div class="section_last">
-            <ul>
               <li>Запчасти CUMMINS</li>
               <li>Запчасти MADARA</li>
               <li>Запчасти для легковых автомобилей</li>
@@ -616,6 +667,15 @@
               <li>Запчасти КамАЗ</li>
             </ul>
           </div>
+          <!-- <div class="section_last">
+            <ul>
+              <li>Запчасти CUMMINS</li>
+              <li>Запчасти MADARA</li>
+              <li>Запчасти для легковых автомобилей</li>
+              <li>Запчасти ЗИЛ</li>
+              <li>Запчасти КамАЗ</li>
+            </ul>
+          </div> -->
           <div class="section_social">
             <ul>
               <li>
@@ -656,7 +716,7 @@
     </div>
 
     <!-- <script src="/bootstrap/js/bootstrap.bundle.min.js"></script> -->
-    <script src="./Lib/swiper/swiper-bundle.min.js"></script>
+    <script src="./Lib/swiper8/swiper-bundle.min.js"></script>
     <script src="./swiper.js"></script>
   </body>
 </html>
